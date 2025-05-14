@@ -1,0 +1,13 @@
+@host = http://20.105.36.20/
+@json = application/json
+
+### List all products
+# @name List all products
+GET {{host}}/products
+Accept: {{json}}
+
+### Get a single product by ID
+# @name Get product by ID
+@id = 1
+GET {{host}}/products/{{id}}
+Accept: {{json}}
